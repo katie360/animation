@@ -1,0 +1,41 @@
+.element {
+    width: 100%;
+    height: 100%;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes colors {
+    0% {
+        background-color: cyan;
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    100% {
+        background-color: pink;
+    }
+}
+
+.anim {
+    animation: grow 5s infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transition: 2s;
+        transform: scale(2);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
